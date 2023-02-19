@@ -7,18 +7,23 @@
  * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
  *
 */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@700&family=Merriweather:ital,wght@1,700&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather:ital,wght@1,700&family=Roboto&display=swap');
 
-.word h1{
+/* .word h1{
     font-family: 'Fira Sans', sans-serif;
     color: white;
     font-size: 3em;
-}
-.word p {
+} */
+/* .word p {
     font-family: 'Oxygen', Sans-Serif;
 
     color: white;
     font-size: 1.6em;
+} */
+nav{
+    font-family: 'Montserrat', sans-serif;
+
 }
 .color{
     height: 178px;
@@ -138,8 +143,12 @@ body {
     background: rgb(2, 6, 4);
     background-color:#252525;
     margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
     color: #fff;
+    font-weight: 500;
 }
 
 
@@ -163,8 +172,12 @@ h2 {
     font-size: 3em;
     color: #fff;
 }
-
+    span{
+        font-size: 20px;
+        font-weight: 900;
+    }
 p {
+    font-size: 15px;
     line-height: 1.6em;
     color: #eee;
 }
@@ -399,15 +412,15 @@ section.your-active-class .landing__container::after {
 }
 .homei{
     width: 100%;
-    height: 60%;
+    height: 50%;
     display: flex;
     margin-left: 10%;
 }
-.word p {
+/* .word p {
     font-family: 'Oxygen', Sans-Serif;
     color: white;
     font-size: 1.6em;
-}
+} */
 .homei img{
     position: relative;
     height: 200px;
@@ -424,7 +437,7 @@ section.your-active-class .landing__container::after {
     background-color: #171717;
     border-radius: 23px;
     height: 68px;
-    width: 155px;
+    width: 160px;
     border: solid #171717 3px ;
 }
 .btn a{
@@ -777,11 +790,16 @@ nav ul li a{
     color: white;
 }
 .wel{
-    margin-top: 18%;
-    font-family: 'Archivo Black', sans-serif;
-    font-family: 'Merriweather', serif;
-    font-family: 'Roboto', sans-serif;
+    margin-top: 15%;
+    font-family: "Knockout 92", Sans-serif;
     font-weight:600;
+    font-size: 50px;
 }
 
+nav{
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
 
