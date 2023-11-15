@@ -43,3 +43,22 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const projectLinks = document.querySelectorAll(".card-link");
+
+    projectLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const projectId = link.getAttribute("data-project-id");
+        const additionalContent = document.querySelector(`.additional-content.${projectId}`);
+
+        if (additionalContent) {
+          additionalContent.classList.toggle("show");
+        }
+      });
+    });
+  });
