@@ -24,8 +24,20 @@ for (let i = 0; i < navLinks.length; i++) {
     overlay.classList.remove("active");
   });
 }
+function toggleReadMore() {
+  var moreText = document.getElementById("read-more-content");
+  var btnText = document.getElementById("read-more-btn");
 
-
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    btnText.innerHTML = "Read Less";
+    document.querySelector('.hero-text').style.maxHeight = moreText.offsetHeight + 'px';
+  } else {
+    moreText.style.display = "none";
+    btnText.innerHTML = "Read More";
+    document.querySelector('.hero-text').style.maxHeight = "100px"; // Adjust the max-height based on your design
+  }
+}
 
 /**
  * header
