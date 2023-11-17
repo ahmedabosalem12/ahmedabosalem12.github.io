@@ -7,12 +7,12 @@
  */
 
 
-
  .hero-text {
   overflow: hidden;
-  max-height: 100px; /* Adjust the max-height based on your design */
+  max-height: 200px; /* Adjust the max-height based on your design */
   transition: max-height 0.5s ease; /* Add a smooth transition effect */
 }
+
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -1484,3 +1484,35 @@ body {
   justify-content: space-between;
 }
 
+.slideshow-container {
+  max-width: 50%;
+  max-height: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  max-width: 100%;
+  max-height: 50%;
+}
+
+.fade {
+  animation: fade 1.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0%, 100% {
+      opacity: 0;
+  }
+  20%, 80% {
+      opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mySlides {
+      max-width: 100%;
+      max-height: 50%;
+  }
+}
