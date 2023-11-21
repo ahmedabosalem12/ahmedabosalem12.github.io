@@ -1497,23 +1497,15 @@ body {
   max-height: 50%;
 }
 
-.fade {
-  animation: fade 1.5s ease-in-out infinite;
-}
 
-@keyframes fade {
-  0%, 100% {
-      opacity: 0;
-  }
-  20%, 80% {
-      opacity: 1;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .mySlides {
       max-width: 100%;
       max-height: 50%;
+  }
+  #up5{
+    height: 50%;
   }
 }.new-card{
   display: flex;
