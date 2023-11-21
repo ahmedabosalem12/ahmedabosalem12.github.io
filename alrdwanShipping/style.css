@@ -722,15 +722,9 @@ body {
 }
 
 .blog-card .card-text { margin-block: 15px; }
-
-
-.HUSBANDRY{}
-
-
 /*-----------------------------------*\
   #NEWSLETTER
 \*-----------------------------------*/
-
 .newsletter { background-color: var(--dark-orange); }
 
 .newsletter .img-holder {
