@@ -1353,7 +1353,7 @@ body {
   flex-direction  : column;
   justify-content : center;
   align-items     : center;
-  margin     : 0;
+  margin     : auto;
   padding    : 0;
   box-sizing : border-box;
   font-family: 'Montserrat', sans-serif;
@@ -1378,7 +1378,7 @@ body {
   position        : relative;
   background-color: #146C94;
   height          : 350px;
-  width           : 220px;
+  width           : 270px;
   border-radius   : 12px;
   box-shadow      : var(--shadow-2);
   left            : 0;
@@ -1718,6 +1718,8 @@ div.desc {
 @media (min-width: 992px) {
   .container_c {
     grid-template-columns: repeat(7, 1fr); /* Two columns for large screens */
+    margin-left: 4%;
+
   }
 }
 
