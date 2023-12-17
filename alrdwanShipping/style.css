@@ -325,7 +325,9 @@ body {
   color: #fff;
   font-size: 3rem;
 }
-
+.sech{
+  display: flex;
+}
 .nav-open-btn {
   color: var(--white);
   font-size: 35px;
@@ -384,6 +386,43 @@ body {
 }
 
 .navbar-link:is(:hover, :focus) {
+  background-color: var(--cultured-1);
+  color: #19A7CE;
+}
+.navbar-item.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.navbar-item.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navlog{
+  display: flex;
+}
+.navlog img{
+  height: 15%;
+  width: 15%;
+}
+.dropdown-content a {
+  color: var(--black);
+  padding: 15px;
+  display: block;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
   background-color: var(--cultured-1);
   color: #19A7CE;
 }
@@ -474,6 +513,11 @@ body {
   0% { transform: translateY(0); }
   100% { transform: translateY(20px); }
 }
+@keyframes movelog {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(80px); }
+}
+
 
 
 
@@ -486,7 +530,6 @@ body {
 .about-banner {
   position: relative;
   box-shadow: var(--shadow-2);
-  max-width: 300px;
   margin-block-end: 60px;
 }
 
@@ -1004,11 +1047,23 @@ body {
   .grid-list { grid-template-columns: 1fr 1fr; }
 
 
-
+  .logorad{
+    animation: movelog 2s ease-in-out infinite alternate;
+  
+  }
   /**
    * HERO
    */
-
+.photo{
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+}
+.photo img{
+  margin-bottom: 20px;
+  height: 200PX;
+  width: 200px;
+}
   .hero-title .span { --fs-2: 7rem; }
 
   .hero-text {
@@ -1078,7 +1133,9 @@ body {
   .footer-top { grid-template-columns: 1fr 1fr; }
 
 }
-
+#About .container{
+  display: flex;
+}
 
 
 
@@ -1314,7 +1371,9 @@ body {
    * ABOUT
    */
 
-  .about-banner { max-width: 370px; }
+  .about-banner { max-height: 800px; 
+  margin-left: auto;
+  }
 
   .about .abs-img-2 { width: max-content; }
 
@@ -1819,8 +1878,20 @@ div.desc {
     width: 100%;
   }
 }
-#hiddenAudio {
+/* #hiddenAudio {
   position: absolute;
   left: -9999px;
   top: -9999px;
+} */
+
+/* Add this CSS to your existing styles or create a new CSS file */
+
+
+.radLogo{
+  display: flex;
+  justify-content: space-between;
+}
+.radLogo img{
+  height: 40%;
+  width: 40%;
 }
