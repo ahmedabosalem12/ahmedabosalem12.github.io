@@ -26,7 +26,11 @@ for (let i = 0; i < navLinks.length; i++) {
 }
 
 
-
+window.onload = function() {
+  var audio = document.getElementById('hiddenAudio');
+  audio.style.display = 'none';  // Alternatively, you can use visibility: hidden;
+  audio.play();
+};
 /**
  * header
  */
