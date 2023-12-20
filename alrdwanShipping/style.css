@@ -662,7 +662,12 @@ body {
 }
 
 
-
+@media only screen and (max-width: 600px) {
+  .photo {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+    max-width:15%;
+    }
+}
 
 
 /*-----------------------------------*\
