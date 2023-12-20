@@ -597,6 +597,21 @@ body {
   }
 }
 
+/* Add this to your existing CSS */
+
+.logorad {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+
+  /* Add additional styles as needed for spacing, margins, etc. */
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+  .logorad {
+    max-width: 80%; /* Adjust as needed for smaller screens */
+  }
+}
 
 
 
