@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<<head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <!-- 
       - favicon
     -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
   
     <!-- 
@@ -33,6 +34,15 @@
         header{
             background-color: #00337C;
         }
+        .img-holder{
+          height: 300px;
+          width: 300px;
+          margin-bottom: 50px;
+        }
+        .radwan5{
+          margin-bottom: 81%;
+        }
+
     </style>
   </head>
 <body id="top">
@@ -461,9 +471,39 @@
                 <div class="blog-card">
     
                   <figure class="card-banner img-holder" style="--width: 770; --height: 578;">
-                    <img src="./assets/images/sludge.jpg" width="770" height="700" loading="lazy"
-                      alt="At the end of the day, going forward, a new normal that has evolved from. your only logistic partner."
-                      class="img-cover">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="sli1.jpg" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="sli2.jpg" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="sli3.jpg" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="sli4.jpg" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="sli5.jpg" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="sli5.jpg" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="sli6.jpg" class="d-block w-100 h-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                   </figure>
     
                   <div class="card-content">
@@ -735,6 +775,8 @@
           </div>
         </section>
       </section>
+
+
       <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.2946160578243!2d32.56750486959318!3d29.945544898435845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14562553d2e68eb5%3A0x1b1c4d8b77e58935!2sAlRadwan%20marine%20services!5e0!3m2!1sen!2seg!4v1700408961066!5m2!1sen!2seg"
       width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
@@ -842,5 +884,9 @@
         <source src="videoplayback.mp3" type="audio/mp3">
         Your browser does not support the audio tag.
       </audio>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
 </html>
