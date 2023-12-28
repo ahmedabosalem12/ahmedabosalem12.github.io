@@ -236,3 +236,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+var i = 0;
+var txt = 'Alradwan your giued in suze canal zone '; /* The text */
+var speed = 5; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.querySelector(".wel").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.onbeforeunload(typeWriter())
