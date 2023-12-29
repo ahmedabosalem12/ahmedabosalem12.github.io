@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALRADWAN SHIPPING AGENCY</title>
+  
+    <!-- 
+      - favicon
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+    <!-- 
+      - custom css link
+    -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="style.css">
+  
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+  
+    <!-- 
+      - preload images
+    -->
+    <style>
+        #img-holder{
+            height: 720px;
+            margin-bottom: 150%;
+        }
+        #img-holders{
+            height: 720px;
+            margin-top: 15%;
+        }
+      .lig{
+        display: flex;
+        flex-direction: column;
+margin: auto;      }
+        header{
+            background-color: #00337C;
+        }
+        .img-holder{
+          height: 300px;
+          width: 300px;
+          margin-bottom: 50px;
+        }
+        .radwan5{
+          margin-bottom: 81%;
+        }
+        .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+    </style>
+  </head>
+<body id="top">
+    <header class="header" data-header>
+        <div class="container">
+          <div class="navlog">
+            <img src="assets/images/logo.png" alt="">
+            <h1>
+              <a href="/1.htm" class="logo">Alradwan</a>
+            </h1>
+          </div>
+    
+    
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+    
+    
+              <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="/index.html" class="navbar-link" data-nav-link>
+                  <span>Home</span>
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+              </li>
+    
+      
+              </li>
+            </ul>
+          </nav>
+          <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+    
+          <div class="overlay" data-nav-toggler data-overlay></div>
+    
+        </div>
+      </header>
+    <section class="section about  HUSBANDRY" id="about" aria-label="about">
+        <div class="container">
+    
+    
+    
+          <div class="about-content">
+    
+            <p class="section-subtitle">Suez canal History </p>
+    
+            <p class="section-text">
+                the modern Suez canal that was built in the 19th century connects the Red Sea with the Mediterranean in Egypt. The Isthmus of Egypt is so narrow at that point that it suggested the building of a canal to many people in antiquity, and in fact many such canals were built. Apparently, they were all shallow waterways, that took advantage of existing rivers and waterways in the Nile delta, and  led to the Nile rather than the Mediterranean sea. The southern section of the modern canal runs along the ancient routes.
+    
+            </p>
+    
+            <ul class="about-list">
+    
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+    
+                <p class="about-text">
+                    The inscriptions in the tomb of Weni the Elder, who lived during the 6th Dynasty of the Old Kingdom (c. 2407-2260 BC)  tell us a lot about Egyptian canal building and the reasons for building them - (for war ships and for transporting monument stone). Scholars are still debating, however, whether his waterways ran all the way from the Mediterranean to the Red Sea. A canal was also supposedly built by Thutmose III in about 1500 B.C.E.
+                </p>
+              </li>
+    
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+    
+                <p class="about-text">
+                    Inscriptions of Rameses 2 (1279-1212 BC) claim that he finished (or repaired) a canal leading from the Nile to the Red sea via the wadi Tumilat and the Bitter lakes. Sometime in the next 600 years it must have silted up because Nekhau (Necho) 2 (609-594 BC) began and later abandoned its re-excavation.    
+                </p>
+              </li>
+    
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+    
+                <p class="about-text">
+                    Herodotus presumably had no access to the earlier inscriptions when he wrote:
+
+                    This man (Necho) was the first who attempted the channel leading to the Erythraian Sea, which Dareios the Persian afterwards completed: the length of this is a voyage of four days, and in breadth it was so dug that two triremes could go side by side driven by oars; and the water is brought into it from the Nile. The channel is conducted a little above the city of Bubastis by Patumos the Arabian city, and runs into the Erythraian Sea: and it is dug first along those parts of the plain of Egypt which lie towards Arabia, just above which run the mountains which extend opposite Memphis,    
+                </p>
+              </li>
+    
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+    
+                <p class="about-text">
+                    where are the stone-quarries,--along the base of these mountains the channel is conducted from West to East for a great way; and after that it is directed towards a break in the hills and tends from these mountains towards the noon-day and the South Wind to the Arabian gulf. Now in the place where the journey is least and shortest from the Northern to the Southern Sea (which is also called Erythraian), that is from Mount Casion, which is the boundary between Egypt and Syria, the distance is exactly a thousand furlongs to the Arabian gulf; but the channel is much longer, since it is more winding; and in the reign of Necos there perished while digging it twelve myriads of the Egyptians. Now Necos ceased in the midst of his digging, because the utterance of an Oracle impeded him, which was to the effect that he was working for the Barbarian: and the Egyptians call all men Barbarians who do not agree with them in speech.  Herodotus, Histories 2.158, translated by Macaulay    
+    
+                </p>
+              </li>
+    
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+    
+                <p class="about-text">
+                    Darius put up monuments to his feat along the length of the canal The one at Suez states amongst other things:
+
+                    'I, Darius, Great King, king of kings, king of the countries of all languages, king of the wide and far-off earth, son of Hystaspes the Achaemenid. say:
+                    
+                     I, the Persian, with the Persian (soldiers), have taken Egypt. I gave the order to dig this stream from the river which is in Egypt (Piru is its name) to the River Amer sea which comes out of Persia. This stream was dug as I have ordered, and the vessels journeyed on this stream from Egypt to Persia, as I have ordered.' (Re-translated from a French translation in Vincent Scheil's, Inscription de Darius à Suez, Le Bulletin de l’Institut français d’archéologie orientale.30 (1931), p.297)    
+                </p>
+              </li>
+            </ul>
+          </div>
+          <figure class="about-banner " id="img-holder" style="--width: 400; --height: 720;">
+            <img src="assets/images/lk.png" width="400" height="720" loading="lazy" alt="" class="img-cover">
+          </figure>
+          
+        </div>
+    </section>
+    <section class="section about  HUSBANDRY" id="about" aria-label="about">
+        <div class="container">
+    
+            <figure class="about-banner " id="img-holders" style="--width: 400; --height: 720;">
+                <img src="assets/images/large_000000.jpg" width="400" height="720" loading="lazy" alt="" class="img-cover">
+              </figure>
+    
+          <div class="about-content">
+    
+            <p class="section-subtitle">Suez Government History </p>
+    
+            <p class="section-text">
+                In the 7th century a town (known as Clysma or Kolzum) near the site of present-day Suez was the eastern terminus of a canal linking the Nile River and the Red Sea. In the 16th century Suez was a Turkish naval station.
+
+                Its importance as a port increased after the Suez Canal opened in 1869. The city was virtually destroyed during battles in the late 1960s and early 1970s between Egyptian and Israeli forces occupying the Sinai Peninsula. The town was deserted following the Six Day War in 1967. Reconstruction of Suez began soon after Egypt reopened the Suez Canal, following the October Warwith Israel.
+                
+                Suez saw major protests, including high levels of violence, during the Egyptian Revolution of 2011. On account of this, it has been called the Sidi Bouzid of Egypt, recalling that small town's role in the 2010–2011 Tunisian revolution.    
+            </p>
+
+          </div>
+
+          
+        </div>
+    </section>
+
+
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.2946160578243!2d32.56750486959318!3d29.945544898435845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14562553d2e68eb5%3A0x1b1c4d8b77e58935!2sAlRadwan%20marine%20services!5e0!3m2!1sen!2seg!4v1700408961066!5m2!1sen!2seg"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="section newsletter" aria-label="newsletter">
+      <div class="container">
+  
+        <figure class="newsletter-banner img-holder">
+          <img src="./assets/images/newsletter-banner.png" width="303" height="381" alt="newsletter banner" class="w-100">
+        </figure>
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="container">
+  
+        <div class="footer-top section">
+  
+          <div class="footer-brand">
+  
+            <a href="#" class="logo">Alradwan</a>
+  
+            <p class="footer-text">
+              s a fact consequent to the ending of state shipping agency monopoly, principals have now full right to
+              appoint their shipping agents whom they choose </p>
+  
+            <ul class="social-list">
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+  
+            <li>
+              <a href="#home" class="footer-link">Home</a>
+            </li>
+  
+            <li>
+              <a href="#About" class="footer-link">About</a>
+            </li>
+  
+            <li>
+              <a href="#Quality" class="footer-link">Quality</a>
+            </li>
+  
+  
+          </ul>
+  
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Other Link</p>
+            </li>
+            <li>
+              <a href="#Port" class="footer-link">Port services</a>
+            </li>
+  
+            <li>
+              <a href="#SLUDGE" class="footer-link">SLUDGE</a>
+            </li>
+            <li>
+              <a href="#FLOATING" class="footer-link"> FLOATING & DRY DOCK SERVICES</a>
+            </li>
+          </ul>
+  
+        </div>
+  
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; Done By <a href="tel:01030070252" class="copyright-link">Ahmed Salem</a>
+          </p>
+        </div>
+  
+      </div>
+    </footer>
+      <audio  controls autoplay style="display: none;">
+        <source src="videoplayback.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+      </audio>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
