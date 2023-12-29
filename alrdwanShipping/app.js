@@ -250,3 +250,5 @@ function typeWriter() {
 }
 
 window.onbeforeunload(typeWriter())
+
+

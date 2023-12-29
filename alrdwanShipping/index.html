@@ -2,7 +2,40 @@
 <html lang="en">
 
 <head>
-  
+  <style>
+    .abdo{
+      height: 10%;
+      width: 30%;
+    }
+    .photo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .abdo {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .photo img {
+      width: 50%;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+
+    .abdo {
+      width: 40%;
+      height: 10%;
+      float: right;
+    }
+
+    .section-text {
+      text-align: left;
+    }
+  }
+  </style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,12 +140,17 @@
               </a>
             </li>
           <li class="navbar-item">
-            <a href="#CONTACT" class="navbar-link " data-nav-link>
+            <a href="#CONTACT" class="navbar-link glow-on-hover" data-nav-link>
               <span>Contact</span>
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
           </li>
-
+          <li class="navbar-item">
+            <a href="#CONTACT" class="navbar-link " data-nav-link>
+              <span>.</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -262,11 +300,17 @@
               Chairman of society of marine services at port Suez.
             </p>
           </div>
-
+          <img src="assets/images/abdo.jpeg" alt="" class="abdo abdo-image open-modal" data-modal-target="abdoModal">
         </div>
+
       </section>
 
-
+      <div id="abdoModal" class="custom-modal">
+        <div class="modal-content">
+          <span class="modal-close" data-modal-target="abdoModal">&times;</span>
+          <img src="assets/images/abdo.jpeg" alt="" class="abdo-modal-image">
+        </div>
+      </div>
       <!-- 
         - #Quality & Safety Policy 
       -->
@@ -461,7 +505,7 @@
                   </h3>
 
                   <p class="card-text">
-                    At Alrdwan Shipping, we redefine port calls with a commitment to excellence. Our experienced team ensures smooth, efficient operations at key global ports. From cutting-edge technology to customs expertise, we guarantee a seamless journey for your cargo. Explore diverse destinations, stay connected with real-time updates, and trust Alrdwan Shipping for a voyage of precision and reliability.
+                    At Alradwan Shipping, we redefine port calls with a commitment to excellence. Our experienced team ensures smooth, efficient operations at key global ports. From cutting-edge technology to customs expertise, we guarantee a seamless journey for your cargo. Explore diverse destinations, stay connected with real-time updates, and trust Alrdwan Shipping for a voyage of precision and reliability.
                   </p>
 
 
@@ -1164,9 +1208,6 @@
           </div>
         </div>
       </section>
-
-
-
       <section class="ourteam section" id="CONTACT" style="margin: 0px;">
         <div class="circle" id="two"></div>
         <h2 class="section-subtitle">Our Contact <br> <span style="margin-left: 25%;">24/7</span>
@@ -1338,7 +1379,7 @@
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/alradwan_a_m_s?igsh=MXhtNm1iZmIzajdobw%3D%3D&utm_source=qr" class="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
@@ -1439,6 +1480,43 @@ setInterval(typeWriter, speed);
 
 // Initial call to start the typewriter effect
 typeWriter();
+
+document.addEventListener('DOMContentLoaded', function() {
+      const openModalButtons = document.querySelectorAll('.open-modal');
+      const closeModalButtons = document.querySelectorAll('.modal-close');
+      const overlay = document.querySelector('.custom-modal');
+
+      openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const modal = document.getElementById(button.dataset.modalTarget);
+          openModal(modal);
+        });
+      });
+
+      closeModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const modal = button.closest('.custom-modal');
+          closeModal(modal);
+        });
+      });
+
+      overlay.addEventListener('click', () => {
+        const modals = document.querySelectorAll('.custom-modal');
+        modals.forEach(modal => {
+          closeModal(modal);
+        });
+      });
+
+      function openModal(modal) {
+        if (modal == null) return;
+        modal.style.display = 'block';
+      }
+
+      function closeModal(modal) {
+        if (modal == null) return;
+        modal.style.display = 'none';
+      }
+    });
   </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
