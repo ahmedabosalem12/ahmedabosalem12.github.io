@@ -235,7 +235,6 @@ body {
 .img-cover {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .vid-cover {
@@ -2471,4 +2470,14 @@ blog-list.grid-list li {
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
