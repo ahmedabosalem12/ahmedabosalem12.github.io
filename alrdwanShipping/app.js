@@ -252,3 +252,41 @@ function typeWriter() {
 window.onbeforeunload(typeWriter())
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const div1 = document.getElementById('div1');
+  const div2 = document.getElementById('div2');
+  const div3 = document.getElementById('div3');
+
+  animateDiv(div1, 1);
+  animateDiv(div2, 2);
+  animateDiv(div3, 3);
+});
+
+function animateDiv(div, delay) {
+  setTimeout(function() {
+    div.style.transition = "all 1s ease-in-out";
+    div.style.opacity = 1;
+    div.style.bottom = "50px"; // You can adjust the final position as needed
+  }, delay * 1000);
+}
+var customSlideIndex = 1;
+  showCustomSlides(customSlideIndex);
+
+  function plusCustomSlides(n) {
+    showCustomSlides(customSlideIndex += n);
+  }
+
+  function currentCustomSlide(n) {
+    showCustomSlides(customSlideIndex = n);
+  }
+
+  function showCustomSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("my-custom-slide");
+    if (n > slides.length) { customSlideIndex = 1 }
+    if (n < 1) { customSlideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[customSlideIndex - 1].style.display = "block";
+  }
