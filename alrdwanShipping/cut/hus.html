@@ -190,6 +190,9 @@ margin: auto;      }
       margin-bottom: 20%;
     }
   }
+  .img-holderr{
+    height: auto;
+  }
     </style>
   </head>
 <body id="top">
@@ -521,10 +524,24 @@ margin: auto;      }
             <li>
               <div class="blog-card">
   
-                <figure class="card-banner img-holder" style="--width: 770; --height: 578;">
-                  <img src="./assets/images/JOUDY  1.png" width="770" height="500" loading="lazy"
-                    alt="Going forward, a new normal that has evolved from generation. moving your products across all borders."
-                    class="img-cover">
+                <figure class="card-banner img-holderr" style="--width: 770; --height: 578;">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                     <img src="assets/images/JOUDY  1.png"  class="d-block w-100 h-50" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/enlarge_jo.jpg" class="d-block w-100 h-100" alt="...">
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                 </figure>
   
                 <!-- <div class="card-content">
@@ -696,13 +713,16 @@ margin: auto;      }
                     </p>
                   </div>
                 <figure class="card-banner img-holder" style="--width: 770; --height: 578;margin-bottom: 133px;">
-                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                      <img src="EGY STAR 1.docx ABD.ELRAHMAN.jpg" id="myImg" class="d-block w-100 h-50" alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="sli1.jpg" class="d-block w-100 h-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/enlarge_eg1.jpg" class="d-block w-100 h-100" alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="sli2.jpg" class="d-block w-100 h-100" alt="...">
@@ -723,11 +743,11 @@ margin: auto;      }
                         <img src="sli6.jpg" class="d-block w-100 h-100" alt="...">
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
