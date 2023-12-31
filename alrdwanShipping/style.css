@@ -2350,13 +2350,14 @@ blog-list.grid-list li {
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 .wrapper span {
+  opacity: 0.2;
 	position: fixed;
 	bottom: -180px;
 	height: 50px;
 	width: 50px;
 	z-index: -1;
 	background-color: #ffffff15;
-	box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+	box-shadow: 0 0 50px #0072ff , 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
 	animation: animate 10s linear infinite;
 }
 .wrapper span:nth-child(1) {
@@ -2425,10 +2426,10 @@ blog-list.grid-list li {
 @keyframes animate {
 	0% {
 		transform: translateY(0);
-		opacity: .6;
+		opacity: 0.2;
 	}
 	80% {
-		opacity: .3;
+		opacity: .1;
 	}
 	100% {
 		transform: translateY(-800px) rotate(360deg);
