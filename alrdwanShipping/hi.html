@@ -32,15 +32,15 @@
   border-radius: 10px;
 }
 
-.glow-on-hover:active {
+.glow-on-hover,.glow-on-hover:active {
   color: #000
 }
 
-.glow-on-hover:active:after {
+.glow-on-hover,.glow-on-hover:active:after {
   background: transparent;
 }
 
-.glow-on-hover:is(:hover, :focus):before {
+.glow-on-hover.glow-on-hover:is(:hover, :focus):before {
   opacity: 1;
 }
 
