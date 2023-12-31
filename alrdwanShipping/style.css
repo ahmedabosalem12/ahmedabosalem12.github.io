@@ -641,6 +641,9 @@ header::before{
   .logorad {
   display:none /* Adjust as needed for smaller screens */
   }
+  .newan{
+    display: none;
+  }
 }
 
 
@@ -2637,11 +2640,14 @@ blog-list.grid-list li {
   height: auto;
   top: 50%;
   z-index: -1;
+  
 }
 .newan img{
   width: 50%;
   opacity: .5;
-
+  -webkit-box-shadow: 2px -4px 39px 23px rgba(160,233,255,1);
+  -moz-box-shadow: 2px -4px 39px 23px rgba(160,233,255,1);
+  box-shadow: 2px -4px 39px 23px rgba(160,233,255,1);
 }
 #an1{
   left: 42%;
