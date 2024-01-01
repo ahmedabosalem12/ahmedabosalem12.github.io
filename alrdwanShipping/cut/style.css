@@ -688,7 +688,8 @@ header::before{
 }
 
 .about-text {
-  font-size: var(--fs-8);
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .about-icon {
@@ -1441,6 +1442,7 @@ header::before{
 
   .section-text {
     max-width: 70ch;
+    font-weight: 700;
     margin-inline: auto;
   }
 
