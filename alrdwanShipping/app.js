@@ -290,3 +290,4 @@ var customSlideIndex = 1;
     }
     slides[customSlideIndex - 1].style.display = "block";
   }
+

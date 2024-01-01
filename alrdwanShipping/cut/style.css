@@ -2219,9 +2219,9 @@ div.desc {
 }
 
 /* The Close Button */
-.close {
+.close,.closei {
   position: absolute;
-  top: 5px;
+  top: 155px;
   right: 35px;
   color: #f1f1f1;
   font-size: 40px;
@@ -2458,7 +2458,42 @@ blog-list.grid-list li {
   margin-bottom: 20%;
 }
 .for{
-  margin: 5%;
   height: 300px;
   width: 50%;
 }
+.t3res{
+  height: fit-content;
+  width: fit-content;
+}
+.imge-po{
+  height: 500px;
+  width: 700px;
+}
+.wrapper span {
+  border-radius: 18px;
+	position: fixed;
+	bottom: -180px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+	background-color: #ffffff15;
+  box-shadow: 0 0 50px rgba(0, 114, 255, 0.3), 
+  0 0 100px rgba(0, 114, 255, 0.3), 
+  0 0 150px rgba(0, 114, 255, 0.3), 
+  0 0 200px rgba(0, 114, 255, 0.3);	animation: animate 10s linear infinite;
+}
+
+
+@media (min-width: 992px) {
+
+.img-holder {
+    height: 200px;
+    width: 550px;
+}
+ }
+ @media (min-width: 576px) {
+
+  .abdo{
+    width: 48%;
+  }
+  }

@@ -5,6 +5,10 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <style>
+    *{
+      
+
+    }
     .abdo{
       height: 10%;
       width: 30%;
@@ -116,7 +120,7 @@
             </a>
             <ul class="dropdown-content">
               <li><a href="#Port">Port Services</a></li>
-              <li><a href="#Yach">Yacht Services</a></li>
+              <li><a href="#yacht">Yacht Services</a></li>
               <li><a href="#FLOATING">FLOATING & DRY DOCK SERVICES</a></li>
 
             </ul>
@@ -149,7 +153,7 @@
           </li>
           <li class="navbar-item">
             <a href="#CONTACT" class="navbar-link " data-nav-link>
-              <span>.</span>
+              <span style="color: black;">.</span>
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
           </li>
@@ -537,7 +541,7 @@
               </div>
             </li>
             <li>
-              <div class="blog-card">
+              <div class="blog-card"  id="yacht">
                 <div class="slideshow-container">
                   <div class="mySlides">
                     <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
@@ -740,123 +744,23 @@
 
 
             Arrange The Following Certificate .
+            <div style="display: flex;" class="impo"><span class="span" style="margin-right: 6px;">01</span>Registry Certificate</div> <br>
+            <div style="display: flex;" class="impo"><span class="span" style="margin-right: 6px;">02</span>Certificate Of Class ( Including Hull And Machinery Certificate ) (Valid
+              Until)</div> <br>
+            <div style="display: flex;" class="impo"><span class="span" style="margin-right: 6px;">03</span>International Load Line Certificate ( Valid Until)</div> <br>
+            <div style="display: flex;" class="impo"><span class="span" style="margin-right: 6px;">04</span>Last Class Status Report</div> <br>
+            <div style="display: flex;" class="impo"><span class="span" style="margin-right: 6px;">05</span>Last 10 Port Call</div> <br>
             <br>
             <br>
             <br>
-            <br>
-            Note For Ships Carrying Petroleum materials (raw - derivatives - products)
+            <p class="section-text">
+              Note For Ships Carrying Petroleum materials (raw - derivatives - products)
+              International Oil Pollution Prevention ( Valid Until) .
+              The Above Certificate Will Be Checked By Suez Canal Harbur Office In Order
+              To Arrangement Suez Canal Transits .
+            </p>
 
-
-
-            International Oil Pollution Prevention ( Valid Until) .
-
-
-
-
-
-            The Above Certificate Will Be Checked By Suez Canal Harbur Office In Order
-
-
-
-            To Arrangement Suez Canal Transits .
           </p>
-
-          <ul class="service-list grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-6.png" width="46" height="60" loading="lazy" alt="Paper">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">01</span> Registry Certificate
-                </h3>
-
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-6.png" width="46" height="60" loading="lazy" alt="Paper">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">02</span> Certificate Of Class ( Including Hull And Machinery Certificate ) (Valid
-                  Until)
-
-
-                </h3>
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-6.png" width="46" height="60" loading="lazy" alt="Paper">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">03</span> International Load Line Certificate ( Valid Until)
-                </h3>
-
-
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-6.png" width="46" height="60" loading="lazy" alt="Paper">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">04</span>Last Class Status Report
-                </h3>
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-6.png" width="46" height="60" loading="lazy" alt="Paper">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">05</span> Last 10 Port Call
-                </h3>
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                </a>
-
-              </div>
-            </li>
-          </ul>
-
         </div>
       </section>
 
@@ -1676,7 +1580,24 @@
     - ionicon link
   -->
   <script>
-    
+    document.addEventListener('DOMContentLoaded', function () {
+  const navToggler = document.querySelector('[data-nav-toggler]');
+  const navbar = document.querySelector('[data-navbar]');
+  const overlay = document.querySelector('[data-overlay]');
+
+  navToggler.addEventListener('click', function () {
+    navbar.classList.toggle('active');
+  });
+
+  overlay.addEventListener('click', function () {
+    navbar.classList.remove('active');
+  });
+});
+
+  </script>
+  <script>
+
+  
     var i = 0;
 var txt = 'Al-Radwan your guide in suez canal zone'; /* The text */
 var speed = 150; /* The speed/duration of the effect in milliseconds */
