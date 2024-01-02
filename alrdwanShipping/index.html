@@ -184,7 +184,7 @@
 
             <h2 class="h1 hero-title" >
 
-              <span class="span">Welcome to Al-Radwan</span> shipping  Agency
+              <span class="span">Welcome to <br> Al-Radwan</span> shipping  Agency
             </h2>
 
 
@@ -305,9 +305,9 @@
               All communications and accounts are handled centrally through Suez. (head office)
               <br> <br>
               Mr.Mohamed Radwan Hight board  of:
-              <br> <br>
+              <br>
 
-             * Secretary General of the Suez and Red Sea Chamber of Shipping  <br> <br>
+             * Secretary General of the Suez and Red Sea Chamber of Shipping  <br> 
 
               <br>
 
@@ -345,7 +345,7 @@
             <!-- <p class="section-subtitle" style="margin-left: 15%;">Quality & Safety Policy </p> -->
 
             <p class="section-text">
-              our policy is provides its customers with distinguished service and competitive prices. Al-Radwan provides high quality for all services required for the ship and its crew. committed to:
+              our policy is provides its customers with distinguished service and competitive prices. Al-Radwan provides high quality for all services required for the ship and its crew.
 
             </p>
 
@@ -794,8 +794,7 @@
               <div class="project-card">
 
                 <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/super_market_products_soft_foc.jpeg" width="397" height="352" loading="lazy"
-                    alt="Warehouse inventory" class="img-cover">
+                  <video src="assets/images/prov.mp4"  width="397" height="352" loading="lazy" controls muted class="img-cover"></video>
                 </figure>
 
                 <button class="action-btn" aria-label="View image">
@@ -1456,6 +1455,30 @@
     </div>
 
       </section>
+      <section class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+        <div class="custom-container">
+          <div class="custom-box">
+            <span></span>
+            <div class="custom-content">
+              <h1>Website Visitor Counter</h1>
+              <p id="counter">Loading...</p>
+       </div>
+          </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <!-- counter -->
+                <div class="col-md-3 col-sm-6  bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;">
+              
+                </div>
+                <!-- end counter -->
+                
+                <!-- end counter -->
+            </div>
+        </div>
+    </section>
+
     </article>
   </main>
 
@@ -1464,7 +1487,7 @@
     width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
   <section class="section newsletter" aria-label="newsletter">
-    <div class="container">
+    <di class="container">
 
       <figure class="newsletter-banner img-holder">
         <img src="./assets/images/newsletter-banner.png" width="303" height="381" alt="newsletter banner" class="w-100">
@@ -1482,8 +1505,7 @@
           <a href="#" class="logo">Al-Radwan</a>
 
           <p class="footer-text">
-            as a fact consequent to the ending of state shipping agency monopoly, principals have now full right to
-            appoint their shipping agents whom they choose </p>
+            With us you feel the difference</p>
 
           <ul class="social-list">
 
@@ -1673,6 +1695,23 @@ function plusSlides(n) {
 }
 
 showSlides(slideIndex);
+document.addEventListener('DOMContentLoaded', function () {
+  // Check if the counter is stored in localStorage
+  let count = localStorage.getItem('visitorCount');
+
+  if (!count) {
+      // If not, initialize the counter to 1
+      count = 1;
+      localStorage.setItem('visitorCount', count);
+  } else {
+      // If stored, increment the counter
+      count++;
+      localStorage.setItem('visitorCount', count);
+  }
+
+  // Display the counter on the webpage
+  document.getElementById('counter').textContent = `You are visitor number: ${count}`;
+});
 
   </script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
