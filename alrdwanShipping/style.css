@@ -571,12 +571,17 @@ header::before{
 .hero-title{
   font-family: 'Fugaz One', sans-serif;    
   font-weight: 800;
-  color: #161616;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.49);
+
+  color: #00337C;
 }
 
 .hero-title .span {
-  color: #00337C;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.49);
+
+  color: #ffffff;
   font-size: 64px;
+
   font-weight: var(--fw-700);
 }
 
@@ -1289,6 +1294,7 @@ header::before{
 
   .logorad {
     animation: movelog 2s ease-in-out infinite alternate;
+    margin-left: 40%;
 
   }
 
