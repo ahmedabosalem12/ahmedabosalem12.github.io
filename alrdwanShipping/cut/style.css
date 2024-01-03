@@ -2456,9 +2456,10 @@ blog-list.grid-list li {
 
 .secfor{
   display: flex;
-  width: 80%;
+   width: 80%;
   margin: auto;
   margin-bottom: 20%;
+
 }
 .for{
   height: 300px;
@@ -2500,3 +2501,17 @@ blog-list.grid-list li {
     width: 48%;
   }
   }
+  @media only screen and (max-width: 600px) {
+.for img{
+  width: 355px;
+    height: 300px;
+}
+.blo{
+  margin-left: -17%;
+}
+.secfor{
+  width: 100%;
+
+}
+  }
+  
