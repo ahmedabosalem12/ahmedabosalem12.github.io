@@ -2841,7 +2841,7 @@ blog-list.grid-list li {
 
 .custom-face.custom-face1 {
   position: relative;
-  background: #333;
+  background: #ff0057;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2850,7 +2850,7 @@ blog-list.grid-list li {
 }
 
 .custom-card:hover .custom-face.custom-face1 {
-  background: #ff0057;
+  background: #820300;
   transform: translateY(0);
 }
 
