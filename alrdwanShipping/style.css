@@ -551,7 +551,7 @@ header::before{
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -652,6 +652,9 @@ header::before{
   }
   .newan{
     display: none;
+  }
+  .content h2 b{
+    font-size: 45px;
   }
 }
 
@@ -2434,8 +2437,8 @@ blog-list.grid-list li {
 	-webkit-text-fill-color: #ffffff;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: #ffffff;
-   font-family: 'Oswald', sans-serif;;
-	font-size: 60px;
+   font-family: 'Oswald', sans-serif;
+	font-size: 45px;
 	text-transform: uppercase;
 	letter-spacing: 12px;
 }
@@ -3003,6 +3006,23 @@ blog-list.grid-list li {
 	text-transform: uppercase;
 	letter-spacing: 12px;
 }
+
+@media only screen and (max-width: 600px){
+  .content h2 b{
+    font-size: 45px;
+
+  }
+  .hero {
+    width: 359px;
+    position: relative;
+    min-height: 40vh;
+  }
+  .abdo {
+    width: 39%;
+}
+}  
+
+
 @keyframes animate {
 	0% {
 		transform: translateY(0);

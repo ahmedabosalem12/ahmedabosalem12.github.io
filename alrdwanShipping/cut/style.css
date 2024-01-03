@@ -646,6 +646,9 @@ header::before{
   .logorad {
   display:none /* Adjust as needed for smaller screens */
   }
+  .for{
+    margin-bottom: 4%;
+  }
 }
 
 
