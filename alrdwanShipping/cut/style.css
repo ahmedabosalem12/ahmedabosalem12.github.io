@@ -486,7 +486,7 @@ header::before{
 
 .navbar-link:is(:hover, :focus) {
   background-color: var(--cultured-1);
-  color: #19A7CE;
+  color: #ffffff;
 }
 
 .navbar-item.dropdown {
@@ -2125,8 +2125,55 @@ div.desc {
 }
 
 
-
 /* Rest of your existing styles */
+.glow-on-hover2 {
+  width: fit-content;
+  height: 50%;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-bottom: 3%;
+}
+
+.footer-text {
+  font-weight: 700;
+  text-align: center;
+  font-size: 10px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+  margin-block: 10px 30px;
+
+}
+.txtfot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  background: #000;
+  margin-bottom: 3%;
+}
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
 
 .myImg {
   border-radius: 5px;
@@ -2513,5 +2560,88 @@ blog-list.grid-list li {
   width: 100%;
 
 }
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #151414; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000000; 
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37vh;
+  }
+  
+  .dropdown-content li a:hover{
+    color: #000;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: white;
+    color: #3B5998;
+  }
+  .fa-instagram {
+    background: white;
+    color: #125688;
+  }
+  
+  .social-list {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-link {
+    background-color: var(--indigo-dye);
+    color: var(--white);
+    font-size: 20px;
+    padding: 12px;
+    transition: var(--transition);
+  }
+  
+  .social-link:is(:hover, :focus) {
+    background-color: var(--prussian-blue);
+  }
+  
+  .footer-list-title {
+    font-size: var(--fs-6);
+    max-width: max-content;
+    padding-block-end: 10px;
+    border-block-end: 3px solid var(--dark-orange);
+    margin-block-end: 20px;
+  }
+  
+  .footer-link {
+    padding-block: 6px;
+  }
+  
+  .footer-bottom {
+    padding-block: 40px;
+    border-block-start: 1px solid var(--prussian-blue);
+    font-size: var(--fs-9);
+    color: var(--indigo-dye);
+  }
+  
+  .copyright-link {
+    display: inline-block;
   }
   

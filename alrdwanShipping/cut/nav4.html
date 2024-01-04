@@ -203,75 +203,94 @@
     </style>
   </head>
 <body id="top">
-    <header class="header active" data-header>
-        <div class="container">
-          <div class="navlog">
-            <img src="assets/images/logo.png" alt="">
-            <h1>
-              <a href="#" class="logo">Alradwan</a>
-            </h1>
-          </div>
-    
-    
-          <nav class="navbar" data-navbar>
-    
-            <div class="navbar-top">
-    
-    
-              <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </div>
-    
-            <ul class="navbar-list">
-    
-              <li class="navbar-item">
-                                <a href="/index.html" class="navbar-link glow-on-hover" data-nav-link>
+  <header class="header active" data-header>
+    <div class="container">
+      <div class="navlog">
+        <img src="assets/images/logo.png" alt="">
+        <h1>
+         <a class="logo">Al-Radwan</a>
+        </h1>
+      </div>
 
-                  <span>Home</span>
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </a>
-              </li>
-              <li class="navbar-item">
-                <a href="nav.html" class="navbar-link glow-on-hover" data-nav-link>
-                  <span>
-                    Sec I</span>
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </a>
-              </li>
-              <li class="navbar-item ">
-                <a href="nav2.html" class="navbar-link glow-on-hover active " data-nav-link>
-                  <span> Sec II</span>
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </a>
-              </li>
-              <li class="navbar-item ">     
-                <a href="nav3.html" class="navbar-link glow-on-hover" data-nav-link>
-                  <span>
-                    Sec III</span>
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </a>  
-    
-     
-                <li class="navbar-item">
-                  <a href="nav4.html" class="navbar-link " data-nav-link>
-                    <span>
-                        Sec IV</span>
-                    <ion-icon name="chevron-forward"></ion-icon>
-                  </a>
-                </li>
-    
-            </ul>
-          </nav>
-    
-          <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
-            <ion-icon name="menu-outline"></ion-icon>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
           </button>
-    
-          <div class="overlay" data-nav-toggler data-overlay></div>
-    
         </div>
-      </header>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link glow-on-hover" data-nav-link>
+              <span>Home</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="cut/hus.html" class="navbar-link glow-on-hover" data-nav-link>
+              <span style="display: flex;">Husbandry <span style="margin-left: 4px;"> Services</span></span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+          <li class="navbar-item dropdown">
+           <a class="navbar-link glow-on-hover active " data-nav-link>
+              <span style="display: flex;">Main <span style="margin-left: 4px;">Activities</span> </span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+            <ul class="dropdown-content">
+              <li><a href="#Port">Port Services</a></li>
+              <li><a href="#yacht">Yacht Services</a></li>
+              <li><a href="#FLOATING">FLOATING & DRY DOCK SERVICES</a></li>
+
+            </ul>
+          </li>
+          <li class="navbar-item dropdown">     
+           <a class="navbar-link glow-on-hover" data-nav-link>
+              <span style="display: flex;">Suez <span style="margin-left: 4px;">Canal</span>  <span style="margin-left: 4px;">History</span></span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>  
+            <ul class="dropdown-content">
+              <li><a href="cut/su.html">Suez Canal History</a></li>
+              <li><a href="cut/suzepo.html">Suez Canal Pilotage
+              </a></li>
+            </ul>  
+
+ 
+            <li class="navbar-item">
+              <a href="#Marine" class="navbar-link glow-on-hover" data-nav-link>
+                <span style="display: flex;">Marine <span style="margin-left: 4px;">supplier</span></span>
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
+          <li class="navbar-item">
+            <a href="#CONTACT" class="navbar-link glow-on-hover" data-nav-link>
+              <span>Contact</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#CONTACT" class="navbar-link " data-nav-link>
+              <span style="color: black;">.</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
       <div class="wrapper">
         <span></span>
         <span></span>
@@ -411,7 +430,6 @@
           </figure>
         </div>
       </section>
-    
       <footer class="footer">
         <div class="container">
     
@@ -420,10 +438,12 @@
             <div class="footer-brand">
     
             <a class="logo ">Al-Radwan</a>
+    <div class="txtfot navbar-link glow-on-hover2">
+      <p class="footer-text " style="color: #ffffff; ;
+      text-transform: capitalize;font-size: 26px; width: 404px">
+         With us you feel the difference</p>
+    </div>
     
-              <p class="footer-text navbar-link glow-on-hover" style="color: #ffffff; 
-             text-transform: capitalize;font-size: 26px; width: 404px">
-                With us you feel the difference</p>
     
               <ul class="social-list">
     

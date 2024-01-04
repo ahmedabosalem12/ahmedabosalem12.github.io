@@ -643,12 +643,23 @@ header::before{
 
 /* Add this to your existing CSS */
 
-
+.logorad {
+  position: relative;
+  left: 583%;
+  top: -246%;
+}
 
 /* Responsive adjustments for smaller screens */
 @media only screen and (max-width: 600px) {
   .logorad {
-  display:none /* Adjust as needed for smaller screens */
+  /* display:none Adjust as needed for smaller screens */
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 800%;
+  top: -420%;
+  animation: movelog 2s ease-in-out infinite alternate;
+
   }
   .newan{
     display: none;
@@ -656,6 +667,7 @@ header::before{
   .content h2 b{
     font-size: 45px;
   }
+
 }
 
 
@@ -1050,7 +1062,57 @@ header::before{
 }
 
 .footer-text {
+  font-weight: 700;
+  text-align: center;
+  font-size: 10px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
   margin-block: 10px 30px;
+
+}
+.txtfot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  background: #000;
+  margin-bottom: 3%;
+}
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: white;
+  color: #3B5998;
+}
+.fa-instagram {
+  background: white;
+  color: #125688;
 }
 
 .social-list {
@@ -1683,7 +1745,7 @@ header::before{
    */
 
   .hero {
-    padding-block-start: 150px;
+    padding-block-start: 80px;
     background-position: left;
   }
 
@@ -2062,6 +2124,7 @@ div.desc {
   .responsive {
     width: 100%;
   }
+
 }
 
 .clearfix:after {
@@ -2308,6 +2371,18 @@ blog-list.grid-list li {
 .glow-on-hover {
   width: fit-content;
   height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+.glow-on-hover2 {
+  width: fit-content;
+  height: 50%;
   border: none;
   outline: none;
   color: #fff;
@@ -3119,13 +3194,13 @@ blog-list.grid-list li {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px 0;
+  padding: -33px;
 }
 
 .custom-container .custom-box {
   position: relative;
   width: 320px;
-  height: 400px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3293,19 +3368,105 @@ blog-list.grid-list li {
   font-weight: 700;
   margin-top: 5px;
 }
-
+.navlog img{
+}
 .custom-container .custom-box .custom-content a:hover {
   background: #ffcf4d;
   border: 1px solid rgba(255, 0, 88, 0.4);
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
 
+.homehero{
+  width: 100%; margin-top: 0px; height: 77%;
+}
+
+@media only screen and (max-width: 600px) {
+  .homehero{
+    width: 112%;
+    margin-top: -50px;
+    height: 140%;
+  }
+  
+}
 
 .anmi .content {
   margin-top: 18%;}
 
-.logorad{
-  position: relative;
-  left: 490%;
-  top: 110%;
+  
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #151414; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37vh;
+}
+
+.dropdown-content li a:hover{
+  color: #000;
+}
+.center{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center p{
+  width: 70%;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+}
+
+.char{
+  font-size: 40px;
+  height: 40px;
+  animation: an 1s ease-out 1 both;
+  display: inline-block;
+}
+
+@keyframes an{
+  from{
+      opacity: 0;
+      transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+  }
+  to{
+      opacity: 1;
+      transform: perspective(500px) translate3d(0, 0, 0);
+  }
+}
+.mylink{
+position: absolute;
+z-index: 150;
+bottom: 0;
+right: 0;
+width: 100%;
+text-align: right;
+padding: .6rem;
+}
+
+.mylink a{
+font-family: Calibri;
+color: #fff;
+border-bottom: 1px solid #fff;
+opacity: .5;
+transition: opacity .3s;
+text-decoration: none
+}
+.mylink a:hover{
+opacity: 1
 }
