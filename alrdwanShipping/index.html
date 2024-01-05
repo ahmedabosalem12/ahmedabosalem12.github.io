@@ -72,7 +72,14 @@
   <!--
     - google font link
   -->
-  
+  <style>
+    .form-control {
+    height: 49px;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 2rem;}
+  </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -207,11 +214,11 @@
           <span></span>
           <span></span>
           <span></span>
-                <div class="banner">
-        <div class="content">
+                <!-- <div class="banner"> -->
+        <!-- <div class="content">
           <h2><b class="wel"></b></h2>
 
-        </div>
+        </div> -->
       </div>
       </div>
       
@@ -225,6 +232,15 @@
 
       </section>
       <!-- about us -->
+<section style="margin-top: 20%;">
+    <div class="monitor-wrapper center">
+      <div class="monitor center">
+        <p>Al-Radwan your guide in suez canal zone</p>
+      </div>
+  </div>
+</section>
+
+
 
       <section class="section blog" aria-label="blog" id="About">
         <div class="container">
@@ -1134,16 +1150,23 @@
             <li>
               <div class="blog-card">
                 <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
-                  <img src="./assets/images/upo1.jpeg" id="myImg" width="770" height="500" loading="lazy"
-                    class="img-cover" onclick="expandImage(this)">
+                  <img src="./assets/images/float (1).jpeg" id="myImg" width="770" height="500" loading="lazy"
+                    class="img-cover tkber" onclick="expandImage(this)">
                 </figure>
               </div>
             </li>
-
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                  <img src="./assets/images/float (2).jpeg" id="myImg" width="770" height="500" loading="lazy"
+                    class="img-cover tkber" onclick="expandImage(this)">
+                </figure>
+              </div>
+            </li>
             <li>
               <div class="blog-card">
                 <figure class="card-banner img-holder vid" style="--width: 770; --height: 500;">
-                  <video width="770" height="500" controls class="vid-cover" onclick="expandVideo(this)">
+                  <video width="770" height="500" controls class="vid-cover tkber" onclick="expandVideo(this)">
                     <source src="assets/images/upo0.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -1154,15 +1177,26 @@
             <li>
               <div class="blog-card">
                 <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
-                  <img src="./assets/images/upo2.jpeg" width="770" height="500" id="myImg1" loading="lazy"
-                    class="img-cover" onclick="expandImage(this)">
+                  <img src="./assets/images/float (3).jpeg" id="myImg" width="770" height="500" loading="lazy"
+                    class="img-cover tkber" onclick="expandImage(this)">
                 </figure>
               </div>
             </li>
             <li>
               <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                  <img src="./assets/images/float (4).jpeg" id="myImg" width="770" height="500" loading="lazy"
+                    class="img-cover tkber" onclick="expandImage(this)">
+                </figure>
+              </div>
+            </li>
+
+       
+
+            <li>
+              <div class="blog-card">
                 <figure class="card-banner img-holder vid" style="--width: 770; --height: 500;">
-                  <video width="770" height="500" controls class="vid-cover" onclick="expandVideo(this)">
+                  <video width="770" height="500" controls class="vid-cover tkber" onclick="expandVideo(this)">
                     <source src="assets/10000000_893838502087723_5876463489778493373_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -1180,18 +1214,17 @@
 
 
 
-
-
-
-
-
       <section class="" id="CONTACT">
         <div>
           <p class="section-subtitle" style="margin-left: 45%;"> our contact</p>
         </div>
     <div class="custom-container">
         <div class="custom-card">
-            <div class="custom-face custom-face1">
+       
+            <div class="custom-face custom-face1 " style="display: flex;flex-direction: column;">
+              <div style="height: 100px; width: 100px; margin-bottom: 20px;">
+                <img src="assets/images/mr.jpeg" alt=""style="height: 100px; width: 100px; border-radius: 50px;">
+              </div>
                 <div class="custom-content">
                     <h3 style="color: white;">Mr.Mohamed Radwan</h3>
                     <h2 style="color: white;">Chairman</h2>
@@ -1263,6 +1296,8 @@
             </div>
         </div>
     </div></section>
+
+
     <section class="" id="CONTACT">
       <div class="custom-container">
 
@@ -1371,7 +1406,7 @@
       
 
 
-      <div class="container border mt-3 bg-light">
+      <div class="container border mt-3 bg-light" style="display: flex;">
         <div class="row">
           <div class="col-md-6 border-left py-3">
             <h1>Contact form</h1>
@@ -1400,6 +1435,10 @@
             <button class="btn btn-primary" onclick="sendMail()">Submit</button>
           </div>
         </div>
+        <div style="margin-left: 50%;">        
+          <img src="assets/images/mr.jpeg" alt=""style="height: 300px; width: 300px;">
+        </div>
+
       </div>
 
 
@@ -1453,12 +1492,27 @@
         <div class="footer-brand">
 
         <a class="logo ">Al-Radwan</a>
-<div class="txtfot navbar-link glow-on-hover2">
-  <p class="footer-text " style="color: #ffffff; ;
-  text-transform: capitalize;font-size: 26px; width: 404px">
-     With us you feel the difference</p>
-</div>
-
+        <article class="custom-article">
+          <h1 class="jt --debug">
+            <span class="jt__row">
+              <span class="jt__text">with us you feel the deference</span>
+            </span>
+            <span class="jt__row jt__row--sibling" aria-hidden="true">
+              <span class="jt__text">with us you feel the deference</span>
+            </span>
+            <span class="jt__row jt__row--sibling" aria-hidden="true">
+              <span class="jt__text">with us you feel the deference</span>
+            </span>
+            <span class="jt__row jt__row--sibling" aria-hidden="true">
+              <span class="jt__text">with us you feel the deference</span>
+            </span>
+          </h1>
+          <span class="custom-top spo"></span>
+          <span class="custom-right spo"></span>
+          <span class="custom-bottom spo"></span>
+          <span class="custom-left spo"></span>
+        </article>
+        
 
           <ul class="social-list">
 
@@ -1552,31 +1606,46 @@
     navbar.classList.remove('active');
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+      var navLinks = document.querySelectorAll('.navbar-link');
+      var dropdownLinks = document.querySelectorAll('.dropdown-content a');
 
+      function closeNavbar() {
+        var navbar = document.querySelector('.navbar');
+        navbar.removeAttribute('data-navbar-open');
+      }
+
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', closeNavbar);
+      });
+
+      dropdownLinks.forEach(function (link) {
+        link.addEventListener('click', closeNavbar);
+      });
+    });
   </script>
+
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    var footerText = document.querySelector(".footer-text");
+
+    // Add an event listener to detect the end of the shine-restart animation
+    footerText.addEventListener("animationiteration", function (event) {
+      // Check if the animation that just ended is shine-restart
+      if (event.animationName === "shine-restart") {
+        // Remove -webkit-text-fill-color when background-position-x is at the initial position
+        if (footerText.style.backgroundPositionX === "0%") {
+          footerText.style.webkitTextFillColor = "initial";
+        }
+      }
+    });
+  });
+</script>
+
   <script>
 
   
-    var i = 0;
-var txt = 'Al-Radwan your guide in suez canal zone'; /* The text */
-var speed = 150; /* The speed/duration of the effect in milliseconds */
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.querySelector(".wel").innerHTML += txt.charAt(i);
-    i++;
-  } else {
-    i = 0; // If the end of the text is reached, reset 'i' to 0
-    document.querySelector(".wel").innerHTML = ''; // Clear the content
-  }
-}
-
-// Call typeWriter every 'speed' milliseconds
-setInterval(typeWriter, speed);
-
-// Initial call to start the typewriter effect
-typeWriter();
-
 document.addEventListener('DOMContentLoaded', function() {
       const openModalButtons = document.querySelectorAll('.open-modal');
       const closeModalButtons = document.querySelectorAll('.modal-close');
@@ -1648,6 +1717,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Display the counter on the webpage
   document.getElementById('counter').textContent = `You are visitor number: ${count}`;
 });
+
+
+
 
   </script>
      <script src="index.js"></script>
