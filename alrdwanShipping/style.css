@@ -3786,3 +3786,51 @@ opacity: 1
 }
 
 * { box-sizing: border-box }
+
+.custom-image-modal,
+.custom-video-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.custom-modal-image-content,
+.custom-modal-video-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+#vid-dis li{
+  margin-left: 13%;
+  height: 50px;
+  width: 50px;
+}
+.custom-img{
+  height: 400%;
+  width: 400%;
+}
+
+.vid{
+  height: 400%;
+  width: 400%;
+}
+
+
+#vid-dis{
+  margin-right: 20%;
+}

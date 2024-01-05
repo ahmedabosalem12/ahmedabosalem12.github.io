@@ -1145,65 +1145,55 @@
             It appears to be an informational document or advertisement about the services offered by a company,
             possibly related to ship maintenance and docking services at the Suez Marine Shipyard. </p>
 
-          <ul class="blog-list" id="vid-dis">
+    
 
-            <li>
-              <div class="blog-card">
-                <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
-                  <img src="./assets/images/float (1).jpeg" id="myImg" width="770" height="500" loading="lazy"
-                    class="img-cover tkber" onclick="expandImage(this)">
-                </figure>
-              </div>
-            </li>
-            <li>
-              <div class="blog-card">
-                <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
-                  <img src="./assets/images/float (2).jpeg" id="myImg" width="770" height="500" loading="lazy"
-                    class="img-cover tkber" onclick="expandImage(this)">
-                </figure>
-              </div>
-            </li>
-            <li>
-              <div class="blog-card">
-                <figure class="card-banner img-holder vid" style="--width: 770; --height: 500;">
-                  <video width="770" height="500" controls class="vid-cover tkber" onclick="expandVideo(this)">
-                    <source src="assets/images/upo0.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </figure>
-              </div>
-            </li>
+            <ul class="blog-list" id="vid-dis">
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                    <img src="./assets/images/float (1).jpeg" class="custom-img" width="770" height="500" loading="lazy" onclick="openExpandedImage(this)">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                    <img src="./assets/images/float (2).jpeg" class="custom-img" width="770" height="500" loading="lazy" onclick="openExpandedImage(this)">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                    <img src="./assets/images/float (3).jpeg" class="custom-img" width="770" height="500" loading="lazy" onclick="openExpandedImage(this)">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                    <img src="./assets/images/float (4).jpeg" class="custom-img" width="770" height="500" loading="lazy" onclick="openExpandedImage(this)">
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                    <video src="assets/images/upo0.mp4" controls muted class="vid"></video>
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                    <video src="assets/10000000_893838502087723_5876463489778493373_n.mp4"class="vid" controls muted></video>
+                  </figure>
+                </div>
+              </li>
 
-            <li>
-              <div class="blog-card">
-                <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
-                  <img src="./assets/images/float (3).jpeg" id="myImg" width="770" height="500" loading="lazy"
-                    class="img-cover tkber" onclick="expandImage(this)">
-                </figure>
-              </div>
-            </li>
-            <li>
-              <div class="blog-card">
-                <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
-                  <img src="./assets/images/float (4).jpeg" id="myImg" width="770" height="500" loading="lazy"
-                    class="img-cover tkber" onclick="expandImage(this)">
-                </figure>
-              </div>
-            </li>
-
-       
-
-            <li>
-              <div class="blog-card">
-                <figure class="card-banner img-holder vid" style="--width: 770; --height: 500;">
-                  <video width="770" height="500" controls class="vid-cover tkber" onclick="expandVideo(this)">
-                    <source src="assets/10000000_893838502087723_5876463489778493373_n.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </figure>
-              </div>
-            </li>
-          </ul>
+              <!-- Add more items as needed -->
+          
+            </ul>
           <div id="myModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content closei" id="img01">
@@ -1593,6 +1583,33 @@
     - ionicon link
   -->
   <script>
+    function openExpandedImage(imgElement) {
+  var imageModal = document.createElement('div');
+  imageModal.className = 'custom-image-modal';
+  imageModal.innerHTML = '<span class="close" onclick="closeModal()">&times;</span>' +
+                        '<img class="modal-content custom-modal-image-content" src="' + imgElement.src + '">';
+
+  document.body.appendChild(imageModal);
+  document.body.style.overflow = 'hidden';
+}
+
+function openExpandedVideo(videoElement) {
+  var videoModal = document.createElement('div');
+  videoModal.className = 'custom-video-modal';
+  videoModal.innerHTML = '<span class="close" onclick="closeModal()">&times;</span>' +
+                        '<video class="modal-content custom-modal-video-content" controls src="' + videoElement.src + '">Your browser does not support the video tag.</video>';
+
+  document.body.appendChild(videoModal);
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  var modal = document.querySelector('.custom-image-modal, .custom-video-modal');
+  if (modal) {
+    modal.parentNode.removeChild(modal);
+    document.body.style.overflow = 'auto';
+  }
+}
     document.addEventListener('DOMContentLoaded', function () {
   const navToggler = document.querySelector('[data-nav-toggler]');
   const navbar = document.querySelector('[data-navbar]');
@@ -1723,7 +1740,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
   </script>
      <script src="index.js"></script>
-
+     <script>
+     function openExpandedImage(imgElement) {
+      var imageModal = document.createElement('div');
+      imageModal.className = 'custom-image-modal';
+      imageModal.innerHTML = '<span class="close" onclick="closeModal()">&times;</span>' +
+                            '<img class="modal-content custom-modal-image-content" src="' + imgElement.src + '">';
+    
+      document.body.appendChild(imageModal);
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function openExpandedVideo(videoElement) {
+      var videoModal = document.createElement('div');
+      videoModal.className = 'custom-video-modal';
+      videoModal.innerHTML = '<span class="close" onclick="closeModal()">&times;</span>' +
+                            '<video class="modal-content custom-modal-video-content" controls src="' + videoElement.src + '">Your browser does not support the video tag.</video>';
+    
+      document.body.appendChild(videoModal);
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeModal() {
+      var modal = document.querySelector('.custom-image-modal, .custom-video-modal');
+      if (modal) {
+        modal.parentNode.removeChild(modal);
+        document.body.style.overflow = 'auto';
+      }
+    }
+  </script>    
      <script
        type="text/javascript"
        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
