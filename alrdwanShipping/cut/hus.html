@@ -374,10 +374,16 @@ margin: auto;      }
   height: 500px;
   width: 350px;
 }
+@media screen and (max-width: 768px) {
+  .nav-open-btn {
+    display: block; /* or some other style */
+  }
+}
     </style>
+    
   </head>
 <body id="top">
-   <header class="header active" data-header>
+  <header class="header active" data-header>
     <div class="container">
       <div class="navlog">
         <img src="assets/images/logo.png" alt="">
@@ -400,7 +406,7 @@ margin: auto;      }
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="/index.html" class="navbar-link glow-on-hover" data-nav-link>
+            <a href="#home" class="navbar-link glow-on-hover" data-nav-link>
               <span>Home</span>
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
@@ -436,13 +442,13 @@ margin: auto;      }
 
  
             <li class="navbar-item">
-              <a href="#Marine" class="navbar-link glow-on-hover" data-nav-link>
+              <a href="/index.html" class="navbar-link glow-on-hover" data-nav-link>
                 <span style="display: flex;">Marine <span style="margin-left: 4px;">supplier</span></span>
                 <ion-icon name="chevron-forward"></ion-icon>
               </a>
             </li>
           <li class="navbar-item">
-            <a href="#" class="navbar-link glow-on-hover" data-nav-link>
+            <a href="/index.html" class="navbar-link glow-on-hover" data-nav-link>
               <span>Contact</span>
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
@@ -457,13 +463,14 @@ margin: auto;      }
       </nav>
 
       <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
-        <ion-icon name="menu-outline"></ion-icon>
+          <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
     </div>
   </header>
+
 
       <div class="newan" id="an2">
         <img src="assets/images/logoan.png" alt="">
@@ -1409,6 +1416,39 @@ margin: auto;      }
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";
+      document.addEventListener('DOMContentLoaded', function () {
+  const navToggler = document.querySelector('[data-nav-toggler]');
+  const navbar = document.querySelector('[data-navbar]');
+  const overlay = document.querySelector('[data-overlay]');
+
+  navToggler.addEventListener('click', function () {
+    navbar.classList.toggle('active');
+  });
+
+  overlay.addEventListener('click', function () {
+    navbar.classList.remove('active');
+  });
+});
     }</script>
+    <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    var navToggler = document.querySelector('[data-nav-toggler]');
+    var navbar = document.querySelector('[data-navbar]');
+    var overlay = document.querySelector('[data-overlay]');
+
+    // Open the navigation menu
+    navToggler.addEventListener('click', function () {
+      navbar.classList.toggle('active');
+      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // Close the navigation menu when clicking outside the menu
+    overlay.addEventListener('click', function () {
+      navbar.classList.remove('active');
+      overlay.style.display = 'none';
+    });
+  });
+
+    </script>
 </body>
 </html>
