@@ -1285,16 +1285,16 @@ margin: auto;      }
             <article class="custom-article">
               <h1 class="jt --debug">
                 <span class="jt__row">
-                  <span class="jt__text">with us you feel the deference</span>
+                  <span class="jt__text">with us you feel the difference</span>
                 </span>
                 <span class="jt__row jt__row--sibling" aria-hidden="true">
-                  <span class="jt__text">with us you feel the deference</span>
+                  <span class="jt__text">with us you feel the difference</span>
                 </span>
                 <span class="jt__row jt__row--sibling" aria-hidden="true">
-                  <span class="jt__text">with us you feel the deference</span>
+                  <span class="jt__text">with us you feel the difference</span>
                 </span>
                 <span class="jt__row jt__row--sibling" aria-hidden="true">
-                  <span class="jt__text">with us you feel the deference</span>
+                  <span class="jt__text">with us you feel the difference</span>
                 </span>
               </h1>
               <span class="custom-top spo"></span>
@@ -1410,5 +1410,21 @@ margin: auto;      }
     span.onclick = function() {
       modal.style.display = "none";
     }</script>
+    <script>
+        
+      document.addEventListener('DOMContentLoaded', function () {
+    const navToggler = document.querySelector('[data-nav-toggler]');
+    const navbar = document.querySelector('[data-navbar]');
+    const overlay = document.querySelector('[data-overlay]');
+  
+    navToggler.addEventListener('click', function () {
+      navbar.classList.toggle('active');
+    });
+  
+    overlay.addEventListener('click', function () {
+      navbar.classList.remove('active');
+    });
+  });
+        </script>
 </body>
 </html>
