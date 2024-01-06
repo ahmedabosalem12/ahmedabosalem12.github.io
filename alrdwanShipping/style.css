@@ -3529,8 +3529,13 @@ opacity: 1
 
 @media only screen and (max-width: 600px) {
   .monitor-wrapper {
-    margin-top: 86%;
+    margin-top: 83%;
+    height: 15%;
+    width: 100%;
   }
+  .monitor {
+    width: 99%;
+    height: 100%;}
   .logorad {
     width: 40px;
     height: 40px;
