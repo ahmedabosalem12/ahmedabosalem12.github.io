@@ -1725,9 +1725,9 @@ header::before{
    * REUSED STYLE
    */
 
-  .container {
-    max-width: 1180px;
-  }
+   .container {
+    max-width: 2000px;
+}
 
   .h1 {
     --fs-3: 12rem;
@@ -3494,20 +3494,19 @@ opacity: 1
   background-color: #d4e5ff;
 }
 .monitor-wrapper {
-  margin-top: 56%;
-  background: #032b62fa;
-  width: 90%;
-  height: 50%;
-  box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.30);
+    margin-top: 54%;
+    background: #032b62fa;
+    width: 99%;
+    height: 31%;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.30);
 }
     .monitor {
-      width: 99%;
-      height: 50%;
-      background-color: #032b62fa;
-      overflow: hidden;
-      white-space: nowrap;
-      /* box-shadow:  0px 5px 10px 2px rgba(0,0,0,0.3); */
-    }
+    width: 99%;
+    height: 94%;
+    background-color: #032b62fa;
+    overflow: hidden;
+    white-space: nowrap;
+}
     .monitor p {
         font-family: 'VT323', monospace;
         font-size: 100px;
@@ -3529,20 +3528,22 @@ opacity: 1
 
 @media only screen and (max-width: 600px) {
   .monitor-wrapper {
-    margin-top: 83%;
-    height: 15%;
+    height: 13%;
+    margin-top: 82%;
     width: 100%;
   }
-  .monitor {
-    width: 99%;
-    height: 100%;}
+  .monitor{
+          height: 100%;
+}
   .logorad {
     width: 40px;
     height: 40px;
     position: relative;
     left: 581%;
     top: -107%;
-    animation: movelog 2s ease-in-out infinite alternate;}
+    animation: movelog 2s ease-in-out infinite alternate;
+      
+  }
 }
 
 .tkber{
@@ -3558,7 +3559,7 @@ opacity: 1
 
 .custom-article {
   position: relative;
-  width: 300px;
+  width: 310px;
   height: 100px;
   color: #002bff;
   /* background: #002bff; */
