@@ -252,7 +252,7 @@ h6,
 /*** Service ***/
 .service-item {
     position: relative;
-    height: 350px;
+    height: 404px;
     padding: 30px 25px;
     background: #FFFFFF;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
@@ -528,3 +528,23 @@ h6,
 .footer a{
     color: #DDDDDD;
 }
+@media only screen and (max-width: 600px) {
+
+.capcert{
+    height:750px;
+}
+.capcert .cap{
+    margin-bottom: 1rem !important;
+}
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    .capcert{
+        height:750px;
+    }
+    .capcert .cap{
+        margin-bottom: 1rem !important;
+    }
+    
+    }
