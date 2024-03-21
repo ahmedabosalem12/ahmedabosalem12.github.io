@@ -678,3 +678,7 @@ h6,
 .itemli{
     margin-bottom: 4%;
 }
+.vendor-carousel img{
+    width: 400px;
+    height: 150px;
+  }
