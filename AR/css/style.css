@@ -649,3 +649,13 @@ h6,
 
         
         }
+
+
+.careem{
+    height: 456px;
+}
+@media only screen and (max-width: 768px) {
+    .careem{
+        height: 312px;
+    }
+}
