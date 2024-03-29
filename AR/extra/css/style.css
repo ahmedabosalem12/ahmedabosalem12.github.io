@@ -694,3 +694,49 @@ h6,
     display: block;
     width: 30%;
 }
+
+.gallery-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .gallery {
+    display: inline-flex;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dots {
+    text-align: center;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #333;
+  }
+
+  .owl-item{
+    width: 497px  !important
+
+  }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 88%;
+}
+.owl-stage-outer{
+    height: 310px;
+}
