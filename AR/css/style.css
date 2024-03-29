@@ -1297,6 +1297,8 @@ background: rgba(21, 36, 64, .4);
     .portfolio .portfolio-item figure img {
         opacity: 0.6;
         transition: 0.3s;
+        height: 100%;
+        width: -webkit-fill-available;
     }
     
     .portfolio .portfolio-item figure:hover img {
